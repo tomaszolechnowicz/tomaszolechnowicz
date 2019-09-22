@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAFFA Eat & Drink</title>
+    <script src="https://kit.fontawesome.com/812650661e.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Eagle+Lake|Roboto|Roboto+Condensed:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .navigation {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: #2C3A47;
+            line-height: 60px;
+            color: white;
+            text-transform: uppercase;
+            z-index: 1;
+            overflow: hidden;
+
+        }
+
+        .navigation .name {
+            float: left;
+            font-family: 'Eagle Lake', cursive;
+            font-size: 40px;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .navigation span.subName {
+            float: left;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            display: inline-block;
+            color: #fff;
+
+
+        }
+
+        .navigation ul {
+            /* display: inline-block; */
+            list-style: none;
+            text-align: right;
+            margin-left: calc(100vw - 500px);
+        }
+
+        .navigation ul li {
+            float: left;
+            border-right: 2px solid white;
+
+
+        }
+
+        .navigation ul li:last-child {
+            border: none;
+        }
+
+        .navigation ul li a {
+
+            padding: 0 15px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: #ddd;
+            font-size: 30px;
+            font-family: 'Roboto Condensed', sans-serif;
+            transition: .3s;
+        }
+
+        .navigation ul li:hover a {
+            color: #fff;
+        }
+
+        .menu {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .menu img {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #29a6dc;
+            color: white;
+            font-family: 'Saira', sans-serif;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+
+            /*  min-height: 80vh;*/
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html"><span class="name">jaffa</span>
+                <span class="subName">eat & drink</span></a>
+        <ul>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="index.html#contact">kontakt</a></li>
+            <li><a href="https://www.facebook.com/JAFFA-eat-drink-304952860394128/"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li><a href="mailto:kontakt@jaffa.pl"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#">pl</a></li>
+        </ul>
+    </nav>
+    <main class="menu">
+        <img src="img/menu/menu1.jpg" alt="">
+        <img src="img/menu/menu2.jpg" alt="">
+        <img src="img/menu/menu3.jpg" alt="">
+        <img src="img/menu/menu4.jpg" alt="">
+        <img src="img/menu/menu5.jpg" alt="">
+        <img src="img/menu/menu6.jpg" alt="">
+        <img src="img/menu/menu7.jpg" alt="">
+
+    </main>
+
+    <footer>
+        ©Tomasz Olechnowicz
+    </footer>
+</body>
+
+</html>
