@@ -6,27 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tomasz Olechnowicz - HomePage</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main/styles/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Witaj na mojej stronie domowej!</h1>
-        <h2>Tomasz Olechnowicz</h2>
+    <header class="header">
+        <h1 class="header__logo">.tolech</h1>
+        <h2 class="header__hello">Witaj na mojej stronie domowej!</h2>
+        <h3 class="header__name">@Tomasz Olechnowicz</h3>
+        </h3>
     </header>
-    <main>
+    <nav class="nav">
+        <p>MENU</p>
+    </nav>
+    <main class="main">
+        <h1 class="main__header">Moje projekty</h1>
+        <div class="main__projects">
+            <div class="main__project">
+                <div class="project__img">
+                    <a class="project__link" href="Hydronix/index.html"><img src="main/img/ath.jpg" alt=""></a>
+                </div>
+                <div class="project__descryption">
+                    <p>AT Hydronix</p>
+                </div>
+            </div>
+            <div class="main__project">
+                <div class="project__img">
+                    <a class="project__link" href="Jaffa/index.html"><img src="main/img/jaffa.jpg" alt=""></a>
+                </div>
+                <div class="project__descryption">
+                    <p>Restauracja JAFFA</p>
+                </div>
+            </div>
 
-        <h1>Moje projekty</h1>
-        <div class="projects">
-            <div class="project__one">
-                <a href="Hydronix/index.html">AT Hydronix</a>
-            </div>
-            <div class="project__two">
-                <a href="Jaffa/index.html">Restauracja Jaffa</a>
-            </div>
         </div>
     </main>
-    <footer>
-        &copy;Tomasz Olechnowicz
+    <footer class="footer">
+        <a class="footer__link" href="https://tomaszolechnowicz.github.io/">©Tomasz Olechnowicz</a>
     </footer>
 </body>
 

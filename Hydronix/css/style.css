@@ -619,12 +619,34 @@ section.main p {
 
 /*FOOTER*/
 
-footer {
+/* footer {
     background-color: #29a6dc;
     color: white;
     font-family: 'Saira', sans-serif;
     text-align: center;
     padding: 20px;
+    font-size: 20px;
+
+    /*  min-height: 80vh;
+} */
+
+footer {
+    background-color: #29a6dc;
+
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+
+
+    /*  min-height: 80vh;*/
+}
+
+footer a {
+
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
     font-size: 20px;
 
     /*  min-height: 80vh;*/
