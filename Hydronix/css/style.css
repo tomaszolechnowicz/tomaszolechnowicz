@@ -1,0 +1,631 @@
+/* 
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .long {
+    height: 300vh;
+    background-color: royalblue;
+} */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1,
+h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: 'Saira', sans-serif;
+    text-transform: uppercase;
+}
+
+/*################# NAGŁÓWEK #################*/
+
+
+
+header.welcome {
+    height: 100vh;
+    background-color: #29a6dc;
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+header div.logo_wrap {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    padding-top: 20px;
+    /* text-align: center; */
+    top: 10vh;
+    left: 0;
+}
+
+header img {
+    width: auto;
+    max-height: 40vh;
+}
+
+header button {
+    position: absolute;
+    line-height: 10vh;
+    font-size: 5vh;
+    bottom: 15vh;
+    width: 80vw;
+    left: 10vw;
+    font-family: 'Saira', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-color: #29a6dc;
+    border: 1px solid white;
+    color: #fff;
+}
+
+@media (min-width:1024px) {
+    header button {
+        transition: .5s;
+    }
+
+    header button:hover {
+        background-color: #fff;
+        color: #1e1e1e;
+    }
+}
+
+
+@media (orientation:landscape) {
+    header button {
+        padding: 10px;
+        font-size: 7vh;
+    }
+}
+
+/*################# SEKCJA CECHY #################*/
+
+section.features {
+    margin: 20px 0;
+    /* max-width: 80vw; */
+    text-align: center;
+}
+
+div.feature {
+    margin: 20px 0;
+}
+
+div.feature h2 {
+    padding: 10px;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+}
+
+p.description {
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Saira', sans-serif;
+    font-weight: lighter;
+}
+
+@media (orientation:landscape) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p.description {
+        font-size: 24px;
+        margin: 10px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:1024px) {
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    div.feature {
+        float: left;
+        width: 30%;
+        margin-left: 2.5%;
+    }
+
+
+}
+
+/*################# SEKCJA MAIN #################*/
+
+section.main {
+    background-color: #1e1e1e;
+    padding-bottom: 60px;
+
+}
+
+.main .element {
+    /* margin-bottom: 50px; */
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.main h1 {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+section.main img {
+    width: 100%;
+    height: auto;
+}
+
+section.main h3 {
+    color: #fff;
+    margin-right: 50px;
+    padding: 15px 15px 15px 40px;
+    border-bottom: 2px solid white;
+}
+
+section.main p {
+    margin-right: 50px;
+    font-family: 'Saira', sans-serif;
+    color: #fff;
+    padding: 15px 15px 50px 40px;
+
+}
+
+.main .element:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+
+
+.main .element:nth-of-type(even) {
+    background-color: #0170ba;
+}
+
+
+
+@media (orientation:landscape) {
+    h3 {
+        font-size: 30px;
+    }
+
+    section.main p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    section.main h3 {
+        font-size: 40px;
+    }
+
+    section.main p {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .main {
+        font-size: 0;
+    }
+
+    section.main h3 {
+        font-size: 30px;
+    }
+
+    section.main p {
+        font-size: 20px;
+    }
+
+    .main .element:nth-of-type(odd) div {
+        float: left;
+    }
+
+    .main .element:nth-of-type(even) div {
+        float: right;
+    }
+
+    .picture,
+    .about {
+        width: 50%
+    }
+
+    .main .element:nth-of-type(even) h3,
+    .main .element:nth-of-type(even) p {
+        margin-right: 0;
+        margin-left: 50px;
+        padding-left: 0;
+    }
+
+    .main .element p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width:1440px) {
+    section.main h3 {
+        font-size: 45px;
+    }
+
+    section.main p {
+        font-size: 30px;
+    }
+
+}
+
+/*################# SEKCJA MOTTO #################*/
+
+.motto {
+    background-image: url(../img/motto2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.motto .bg {
+
+    background-color: rgba(0, 63, 114, 0.5);
+
+    /* height: 60vh; */
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.motto h1 {
+    margin: 50px 10px 20px;
+}
+
+.motto p {
+    font-family: 'Saira', sans-serif;
+}
+
+.motto .text {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.motto .autor {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+@media (min-width:768px) {
+    .motto h1 {
+        margin: 70px 20px 30px;
+        font-size: 38px;
+    }
+
+
+    .motto .text {
+        padding: 30px 50px;
+        font-size: 24px;
+    }
+
+    .motto .autor {
+
+        margin-bottom: 70px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .motto h1 {
+        margin: 80px 20px 30px;
+        font-size: 46px;
+    }
+
+
+    .motto .text {
+        padding: 30px 50px 20px;
+        font-size: 30px;
+    }
+
+    .motto .autor {
+
+        margin-bottom: 80px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width:1024px) {
+    .motto .text {
+        padding: 30px 180px 20px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .motto h1 {
+        margin: 80px 20px 30px;
+        font-size: 56px;
+    }
+
+
+    .motto .text {
+        padding: 30px 15vw 20px;
+        font-size: 40px;
+    }
+
+    .motto .autor {
+
+        margin-bottom: 80px;
+        font-size: 24px;
+    }
+}
+
+/*################# SEKCJA JEŻELI SZUKASZ #################*/
+
+.lookingfor {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: #000;
+    color: #fff; */
+    /* overflow: hidden; */
+
+}
+
+.lookingfor .item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.lookingfor .item:nth-of-type(1) {
+
+    background-image: url(../img/looking1c.jpg);
+}
+
+.lookingfor .item:nth-of-type(2) {
+
+    background-image: url(../img/looking2.jpg);
+}
+
+.lookingfor .item:nth-of-type(3) {
+
+    background-image: url(../img/looking3.jpg);
+}
+
+.lookingfor .item:nth-of-type(4) {
+
+    background-image: url(../img/looking4.jpg);
+}
+
+.lookingfor h1 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.lookingfor p {
+    padding: 15px;
+    font-family: 'Saira', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    transition: 1s;
+
+}
+
+@media (min-width:641px) {
+    .lookingfor .item {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width:1280px) {
+    .lookingfor h1 {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .lookingfor p {
+        opacity: 0;
+        line-height: 400px;
+    }
+
+    .lookingfor .item p:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    .lookingfor .item {
+        transition: 1s;
+        background-size: auto 100%;
+
+    }
+
+    .lookingfor .item:hover {
+        /* opacity: 1; */
+        background-size: auto 130%;
+
+    }
+}
+
+/*################# SEKCJA KONTAKT #################*/
+
+
+.contact {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    /*  height: 46px;*/
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+
+}
+
+.contact .socials {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    padding: 10px 0;
+}
+
+.contact .social img {
+    float: left;
+    padding-left: 10px;
+}
+
+.contact .social span {
+    line-height: 72px;
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.contact .social p {
+    /* line-height: 72px; */
+    float: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+@media (min-width:533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+
+    }
+}
+
+@media (min-width:1300px) {
+
+    .contact h1 {
+        font-size: 48px;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding-top: 0;
+    }
+
+
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .contact .social span {
+        font-size: 22px;
+    }
+
+    .contact .social p {
+        font-size: 22px;
+    }
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 35px;
+        font-size: 24px;
+        padding: 10px;
+        transition: .5s;
+    }
+
+    .contact button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .contact textarea {
+        height: 180px;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #29a6dc;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+
+    /*  min-height: 80vh;*/
+}
